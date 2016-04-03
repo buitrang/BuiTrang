@@ -1,0 +1,30 @@
+// Place all the styles related to the comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.abc {
+    .haha {
+        background:red;
+    }
+    
+    .hehe {
+        
+    }
+}
+
+.navbar-brand {
+    -webkit-transition: all 200ms; /* Safari */
+    transition: all 200ms;
+    color:red;
+    
+    // &:hover {
+    //     -ms-transform: rotate(360deg); /* IE 9 */
+    //     -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    //     transform: rotate(360deg);
+    // }
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

@@ -14,7 +14,17 @@
  *= require_self
  */
 
-body { padding-top: 100px; }
+body { padding-top: 100px; background-color: #d0e4fe;}
 footer { margin-top: 100px; }
 table, td, th { vertical-align: middle; border: none; }
 th { border-bottom: 1px solid #DDD; }
+
+.image {
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.image:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}

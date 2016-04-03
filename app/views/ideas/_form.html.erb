@@ -1,5 +1,7 @@
 
 <%= form_for @idea, :html => {:multipart => true} do |f| %>
+ <%= f.hidden_field :user_id, value: current_user.id %>
+ 
   <% if @idea.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@idea.errors.count, "error") %> prohibited this idea from being saved:</h2>
